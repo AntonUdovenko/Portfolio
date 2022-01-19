@@ -24,10 +24,11 @@
         }
     }
     &__link {
-        transition: 0.5s all;
         &:hover {
-            background-color: rgba($color: #5e5a5a, $alpha: 0.23);
-            box-shadow: 3px 3px 20px #5e5a5a;
+            svg path {
+            fill: $main-color;
+            transition: 0.5s all;
+            }
         }
     }
 }

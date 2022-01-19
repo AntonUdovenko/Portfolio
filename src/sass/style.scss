@@ -19,12 +19,13 @@
     height: 3px;
     width: 60px;
     background-color: $main-color;
-    margin-top: 25px;
+    margin: 25px auto 0 auto;
 }
 
 @import 'blocks/hamburger';
 @import 'blocks/promo';
 @import 'blocks/about';
+@import 'blocks/resume';
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';

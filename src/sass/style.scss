@@ -15,8 +15,16 @@
     margin: 0 auto;
 }
 
+.divider {
+    height: 3px;
+    width: 60px;
+    background-color: $main-color;
+    margin-top: 25px;
+}
+
 @import 'blocks/hamburger';
 @import 'blocks/promo';
+@import 'blocks/about';
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';

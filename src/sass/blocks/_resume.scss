@@ -70,6 +70,8 @@
         &-body {
             padding-left: 43px;
             margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
         }
         &-icon {
             position: absolute;
@@ -86,10 +88,6 @@
             font-size: 12px;
             line-height: 18px;
             margin-top: 5px;
-        }
-        &-body {
-            font-size: 12px;
-            line-height: 18px;
         }
     }
 }

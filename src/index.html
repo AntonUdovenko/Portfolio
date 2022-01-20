@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -129,7 +129,7 @@
         </div>
     </section>
 
-    <section class="about">
+<section class="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
@@ -456,23 +456,29 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input id="name" type="text" name="name">
+                            <input required id="name" type="text" name="name">
                             <label for="name">Your name</label>
                         </div>
                         <div class="contacts__input">
-                            <input id="email" type="email" name="email">
+                            <input required id="email" type="email" name="email">
                             <label for="email">Your mail</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Your message</label>
                         </div>
-                        <div><button class="btn contacts__button">Send message</button></div>
+                        <div class="contacts__triggers">
+                            <button class="btn contacts__button">Send message</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>I accept the <a href="/policy.html">privacy policy</a></span>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,14 +1,5 @@
 .skills {
     padding-top: 120px;
-    h2 {
-        text-align: center;
-        position: relative;
-        @include before_circle;
-        &::before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
     &__items {
         margin-top: 60px;
         display: grid;

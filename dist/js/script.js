@@ -44,7 +44,9 @@ $(document).ready(function(){
               required: true,
               minlength: 2
             },
-            phone: "required",
+            checkbox: {
+                required: true,
+              },
             email: {
               required: true,
               email: true
@@ -55,6 +57,9 @@ $(document).ready(function(){
               required: "Please enter your name",
               minlength: jQuery.validator.format("Type from {0} characters!")
             },
+            checkbox: {
+                required: "Please accept"
+              },
             phone: "Please enter your phone number",
             email: {
               required: "Please enter your email",
@@ -66,7 +71,7 @@ $(document).ready(function(){
 
       validateForms('.contacts__form');
 
-      $('form').submit(function(e) {
+      $('.contacts__form').submit(function(e) {
         e.preventDefault();
         if (!$(this).valid()) {
           return;

@@ -62,6 +62,16 @@
             position: absolute;
             top: -29px;
         }
+        input.error#checkbox {
+            border: none;
+            margin-right: 10px;
+            position: relative;
+        }
+        label.error#checkbox-error {
+            position: absolute;
+            top: -12px;
+            color: red;
+        }
     }
     &__triggers {
         grid-column: 1 / 3;
@@ -70,6 +80,7 @@
         column-gap: 35px;
     }
     &__policy {
+        position: relative;
         font-size: 12px;
         line-height: 18px; 
         display: flex;

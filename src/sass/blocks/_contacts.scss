@@ -55,6 +55,13 @@
             top: -9px;
             left: 12px;
         } 
+        input.error {
+            border: 1px solid red;
+        }
+        label.error {
+            position: absolute;
+            top: -29px;
+        }
     }
     &__triggers {
         grid-column: 1 / 3;
@@ -96,5 +103,9 @@
         font-size: 14px;
         font-weight: bold;
         line-height: 21px;
+    }
+    .error {
+        position: absolute;
+
     }
 }

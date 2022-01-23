@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger'),
         menu = document.querySelector('.menu'),
-        closeElem = document.querySelector('.menu__close');
+        closeElem = document.querySelector('.menu__close'),
+        closeMenuLink = document.querySelector('.menu__link-a'),
         closeOverlay = document.querySelector('.menu__overlay');
 
 hamburger.addEventListener('click', () => {
@@ -14,6 +15,17 @@ closeElem.addEventListener('click', () => {
 closeOverlay.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+closeMenuLink.addEventListener('click', () => {
+  menu.classList.remove('active');
+});
+
+document.querySelectorAll('.menu__link-a').forEach(item => {
+  item.addEventListener('click', event => {
+    menu.classList.remove('active');
+  })
+})
+
 
 const counters = document.querySelectorAll('.skills__ratings-counter'),
       lines = document.querySelectorAll('.skills__ratings-line span');
